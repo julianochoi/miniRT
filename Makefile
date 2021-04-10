@@ -5,11 +5,11 @@ include	src.mk
 SRC			=	$(addprefix src/, $(SRC_FILES))
 OBJ			=	$(SRC:.c=.o)
 
-LIBS		=	ft mlx Xext X11 ftmath m
+LIBS		=	ft mlx Xext X11 m
 
 # **************************************************************************** #
 
-LIB_DIR		=	lib/libft lib/libftmath
+LIB_DIR		=	lib/libft
 MLX_DIR		=	lib/minilibx-linux
 
 INC_DIR		=	include $(MLX_DIR) $(addsuffix /include, $(LIB_DIR))
